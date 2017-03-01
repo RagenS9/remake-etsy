@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/global.css" />
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
 </head>
-<body>
 
+<body>
     <header>
-        <nav class="navbar navbar-default">
+        <!--<nav class="navbar navbar-default">-->
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header container">
@@ -27,17 +27,17 @@
 
                                 <div class="col-sm-8 search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="board games">
+                                        <input type="text" class="form-control" id="search">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button">Search</button>
+                                            <button class="btn btn-default" type="button" id="searchButton">Search</button>
                                         </span>
                                     </div><!-- /input-group -->
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 signBuy">
-                            <ul class="nav navbar-nav">
+                        <div class="col-sm-6 signBuy text-right">
+                            <ul class="list-inline">
                                 <li><a href="#">Sell on Etsy</a></li>
                                 <li><a href="#">Register</a></li>
                                 <!--<li id="signInBTN"><a href="#">Sign in</a></li>-->
@@ -66,13 +66,15 @@
                     </div><!-- /.navbar-collapse -->
                 </div>
             </div><!-- /.container-fluid -->
-        </nav>
+        <!--</nav>-->
     </header>
 
     <main>
+        <!--try making this a section?-->
         <div class="container mainResults">
             <div class="row">
                 <div class="col-md-2 filter">
+                    <!--try making this an aside?-->
                     <h5>Show results for:</h5>
                         <div class="categories">
                             <h5>All categories</h5>

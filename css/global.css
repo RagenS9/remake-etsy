@@ -5,22 +5,32 @@ img {
     width: 100%;
 }
 
-div.container-fluid {
+/*div.container-fluid {
     padding-left: 20px;
     padding-right: 0px;
+}*/
+
+/*This didn't help turn the header white.*/
+body {
+    background-color: white;
 }
 
+/*this didn't help turn the header white or extend the sides to 100%*/
 header {
     padding-top: 20px; 
-    /*background-color: white; */
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white; 
+    width: 100%;
 }
 
+/*This didn't help turn the header white or extend the sides to 100%.*/
 .navbar-header {
     background-color: white;
     width: 100%;
 }
 
-.navbar-default .navbar-brand {
+.navbar-brand {
     color: #F56400; 
     font-family: serif;
     font-size: 35px; 
@@ -32,8 +42,8 @@ header {
     text-align: right;
 }*/
 
-/*Okay . . . WHY won't this stretch across the page?? Why do I get padding when I've told it no padding? */
-.navbar-default .navbar-nav {
+/*Okay . . . WHY won't this stretch across the page?? Why do I get padding when I've told it no padding and width 100%? */
+.navbar-nav {
     background-color: white;
     width: 100%;
     margin-left: 0px;
@@ -42,19 +52,22 @@ header {
     padding-right: 0px; 
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-nav>li>a:hover {
     /*background-color: deeppink;*/
     /*QQRAGEN: MAKE THIS HAVE A RED BOTTOM BORDER LINE WHEN HOVER.*/
 } 
 
 /*had to use this to get rid of the white strip of space between the header and main.*/
-nav.navbar.navbar-default {
+/*nav.navbar.navbar-default {
     margin: 0px; 
     border: 0px; 
-}
+}*/
 
+/*why is the color for this extending up into the header, when it's its own section? tried removing any margin or padding */
 .mainResults {
     background-color: #FAF9F5;
+    /*margin-top: 0px;
+    padding-top: 0px;*/
     padding: 20px;
     margin-right: 5px;
     margin-left: 5px;
@@ -62,13 +75,11 @@ nav.navbar.navbar-default {
 }
 
 .card {
-    max-width: 300px;
     border: 1px solid #E1E3DF;
     border-radius: 5px;
     margin-bottom: 25px; 
     box-shadow: 0px 0px 5px 0px #C9CAC7;
     background: white;
-    display: inline-block;
 }
 .cardCol {
     padding-left: 5px;
