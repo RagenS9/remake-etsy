@@ -6,13 +6,40 @@ img {
 }
 
 div.container-fluid {
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 0px;
+}
+
+header {
+    padding-top: 20px; 
+    /*background-color: white; */
 }
 
 .navbar-header {
     background-color: white;
     width: 100%;
+}
+
+.navbar-default .navbar-brand {
+    color: #F56400; 
+    font-family: serif;
+    font-size: 35px; 
+    /*padding-left: 20px;*/
+}
+
+/*I tried this to make everything in this row align right, but it didn't change anything. There's no padding on it. No margin. So why is it all the way in the middle?*/
+/*.signBuy {
+    text-align: right;
+}*/
+
+/*Okay . . . WHY won't this stretch across the page?? Why do I get padding when I've told it no padding? */
+.navbar-default .navbar-nav {
+    background-color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px; 
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -26,12 +53,9 @@ nav.navbar.navbar-default {
     border: 0px; 
 }
 
-main {
+.mainResults {
     background-color: #FAF9F5;
     padding: 20px;
-}
-
-.mainResults {
     margin-right: 5px;
     margin-left: 5px;
     width: 100%;
@@ -41,7 +65,7 @@ main {
     max-width: 300px;
     border: 1px solid #E1E3DF;
     border-radius: 5px;
-    /*padding: 20px;*/
+    margin-bottom: 25px; 
     box-shadow: 0px 0px 5px 0px #C9CAC7;
     background: white;
     display: inline-block;
