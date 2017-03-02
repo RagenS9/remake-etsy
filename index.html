@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Vintage board games - Etsy</title>
+    <title>Etsy</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
@@ -29,7 +29,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="search">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button" id="searchButton">Search</button>
+                                            <button class="btn btn-info" type="button" id="searchButton">Search</button>
                                         </span>
                                     </div><!-- /input-group -->
                                 </div>
@@ -48,6 +48,7 @@
                         </ul>
                         </div>
                     </div>
+                <hr />
                 </div>                    
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -67,14 +68,13 @@
                 </div>
             </div><!-- /.container-fluid -->
         <!--</nav>-->
+        <hr />
     </header>
 
     <main>
-        <!--try making this a section?-->
         <div class="container mainResults">
             <div class="row">
-                <div class="col-md-2 filter">
-                    <!--try making this an aside?-->
+                <div class="col-sm-3 filter">
                     <h5>Show results for:</h5>
                         <div class="categories">
                             <h5>All categories</h5>
@@ -90,108 +90,12 @@
                         </div>
                 </div>
 
-                <div class="col-md-10 results">
-                    <p>Did you mean the shop <span>boardgames></span>?</p>
-                    <!--QQRAGEN: ADD HYPERLINK ON BOARDGAMES^^-->
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p><span>All categories> "board games" (<span class="resultNumber">BB</span> Results)</p>
-                            <!--QQRAGEN: ADD HYPERLINK ON CATEGORIES AND FIGURE OUT HOW TO AUTOMATE THE BREADCRUMBS AND RESULTS BB^^-->
-                        </div>
-                        <div class="col-sm-6">
-                            <p>Sort by: <span>Relevancy</span></p>
-                            <!--QQRAGEN: TURN RELEVANCY INTO A DROPDOWN MENU. ALSO HAVE TO NOT SHOW THIS AT CELL SIZE AND REPLACE IT WITH A POP-OUT MENU FOR RESULTS COLUMN. DEAL WITH THIS MESS LATER.-->
-                        </div>
-                    </div>
+                <div class="col-sm-9 results">
+                    <p>Did you mean the shop <a href>boardgames</a>?</p>
+                    <p class="search-result-categories"><a href="">All categories</a> > "board game" (13,331 Results)<span class="pull-right">Sort by: Relevancy</span></p>
 
                     <!--start cards section-->
-                    <div class="row" id="cards">
-                        <!--card 1-->
-                        <!--<div class="col-sm-3 cardCol">-->
-                            <!--<div class="card">-->
-                                <!--<img src="http://unsplash.it/400/300?image=500" alt="Image" />-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT IMAGE-->
-                                <!--<h6 class="card-caption">Product Title</h6>-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT TITLE-->
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="sellerName">Seller Name</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET NAME-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="pricing text-right">$BB</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET PRICE-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--end card-->
-                        
-                        <!--card 2-->
-                        <!--<div class="col-sm-3 cardCol">-->
-                            <!--<div class="card">-->
-                                <!--<img src="http://unsplash.it/400/300?image=600" alt="Image" />-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT IMAGE-->
-                                <!--<h6 class="card-caption">Product Title</h6>-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT TITLE-->
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="sellerName">Seller Name</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET NAME-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="pricing text-right">$BB</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET PRICE-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--end card-->
-                        
-                        <!--card 3-->
-                        <!--<div class="col-sm-3 cardCol">-->
-                            <!--<div class="card">-->
-                                <!--<img src="http://unsplash.it/400/300?image=700" alt="Image" />-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT IMAGE-->
-                                <!--<h6 class="card-caption">Product Title</h6>-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT TITLE-->
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="sellerName">Seller Name</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET NAME-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="pricing text-right">$BB</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET PRICE-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--end card-->
-                                                
-                        <!--card 4-->
-                        <!--<div class="col-sm-3 cardCol">-->
-                            <!--<div class="card">-->
-                                <!--<img src="http://unsplash.it/400/300?image=800" alt="Image" />-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT IMAGE-->
-                                <!--<h6 class="card-caption">Product Title</h6>-->
-                                <!--QQRAGEN: WILL NEED TO GET PRODUCT TITLE-->
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="sellerName">Seller Name</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET NAME-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<h6 class="pricing text-right">$BB</h6>-->
-                                        <!--QQRAGEN: WILL NEED TO GET PRICE-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--end card-->
-                    <!--</div>-->
-                    <!--End of cards section-->
+                    <div class="row" id="cards"></div>
                 </div>
             </div>
         </div>
@@ -216,7 +120,7 @@
     <footer>
         <div class="container pageLinks">
             <div class="row">
-                <div class="col-lg-1 column-offset-1">
+                <div class="col-sm-2">
                     <h6>Turn your passion into a business</h6>
                     <!--QQRAGEN: ACTS LIKE A BUTTON WHEN YOU CLICK-->
                     <p>OPEN A SHOP BUTTON</p>
@@ -229,7 +133,7 @@
                     <a href>Manufacturing</a>
                 </div>
 
-                <div class="col-lg-1 column-offset-1">
+                <div class="col-sm-2">
                     <h6>Join the community</h6>
                      <!--QQRAGEN: ACTS LIKE A BUTTON WHEN YOU CLICK-->
                      <a href>Teams</a>
@@ -239,7 +143,7 @@
                      <a href>Etsy Local</a>
                 </div>
 
-                <div class="col-lg-1 column-offset-1">
+                <div class="col-sm-2">
                     <h6>Discover and shop</h6>
                      <!--QQRAGEN: ACTS LIKE A BUTTON WHEN YOU CLICK-->
                      <a href>Gift cards</a>
@@ -251,7 +155,7 @@
                      <a href>Editor's Picks</a>
                 </div>
 
-                <div class="col-lg-1 column-offset-1">
+                <div class="col-sm-2">
                     <h6>Get to know us</h6>
                      <!--QQRAGEN: ACTS LIKE A BUTTON WHEN YOU CLICK-->
                      <a href>About</a>
@@ -262,7 +166,7 @@
                      <a href>Investors</a>
                 </div>
 
-                <div class="col-lg-1 column-offset-1">
+                <div class="col-sm-2">
                     <h6>Follow Etsy</h6>
                      <!--QQRAGEN: ACTS LIKE A BUTTON WHEN YOU CLICK-->
                      <a href>Facebook</a>
@@ -276,34 +180,34 @@
                 </div>
             </div>
         </div>
-
+        <br/>
         <div class="container legalStuff">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <a href>United States | English (US) | $(USD)</a>
                     <!--QQRAGEN: LOOKS LIKE ONE BIG BUTTON, MAYBE?-->
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-1">
+                            <div class="col-sm-2">
                                 <p id="copyright">(c)2017 Etsy</p>
                             </div>
 
-                            <div class="col-lg-1">
+                            <div class="col-sm-2">
                                 <a href>Legal</a>
                             </div>
 
-                            <div class="col-lg-1">
+                            <div class="col-sm-2">
                                 <a href>Privacy</a>
                             </div>
 
-                            <div class="col-lg-1">
+                            <div class="col-sm-2">
                                 <a href>Internet-based ads</a>
                             </div>
 
-                            <div class="col-lg-1">
+                            <div class="col-sm-2">
                                 <p>HELP BUTTON</p>
                                 <!--QQRAGEN: ADD HELP BUTTON-->
                             </div>
